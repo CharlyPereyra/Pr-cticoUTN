@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+.banner {
+    width: 100%;
+    padding: 9rem 3rem;
+    text-align: center;
+    background: url("../img/fondo.jpg");
+    background-color: rgba(0,0,0,.3);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.banner h1 {
+    color: #f1f1f1;
+}
+
+.container {
+    width: 100%;
+    height: 90px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+}
+
+.logo {
+    width: 150px;
+    margin:0;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.item-options {
+    color: #2b2f7c;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.item-options:hover{
+    color: #f65004;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article {
+    width: 70%;
+}
+/*--------------------hasta aqui ejemplo--------------------*/
+/*----------------SLIDER-----------------------*/
+.position{
+    
+    position: relative
+    transform translate(-50%, -50%)
+}
+
+.slider{
+    background-image: url(/Slider-img/FotoSliderAlfoJaureNC.png);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    animation: animate 30s infinite;
+}
+
+@keyframes animate {
+    20% {
+        background-image: url(/Slider-img/FotoSliderGustaCristina.png)
+    }
+    40% {
+        background-image: url(/Slider-img/slider4Primavera.png)
+    }
+    60% {
+        background-image: url(/Slider-img/slider_6_abril_2019.png)
+    }
+    80% {
+        background-image: url(/Slider-img/Xxvrpia.jpeg)
+    }
+    100% {
+        background-image: url(/Slider-img/slider4Primavera.png)
+    }
+}
+/*----------------fin SLIDER-----------------------*/
+
+/*--------Comienzo de notas alineadas-------------*/
+
+.content-notas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.img-notas img  {
+   width: 100%;
+   justify-content: center;
+}
+
+.img-notas h3{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/*------No los pude poner en 2 columna/3 filas-----*/
+
+
+/* footer de https://www.youtube.com/watch?v=YOb67OKw62s&ab_channel=CrypticalCoder
+modificado estilos acorde al sitio web------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container-pie{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	justify-content: center;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #1e2657;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #f65004;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #f65004;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #f65004;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+#marca-pie {
+    color: #bbbbbb;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
